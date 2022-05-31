@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}     
+    <div class="container">
+        {% for i in familiares %}
+            <a href="/">
+                <div class="card">
+                    <h2>{{i.nombre}}</h2> <h2>{{i.apellido}}</h2>
+                    <span>{{i.parentezco}} </span> -- 
+                    <span>{{i.edad}} </span> --
+                    <span>{{i.fechaNacimiento}} </span>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}

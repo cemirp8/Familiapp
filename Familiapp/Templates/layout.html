@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiembrosFamilia</title>
+</head>
+
+<style>
+    body {
+        color: white;
+        background:rgb(202, 226, 240);
+        margin: 0;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        gap: 1rem;
+    }
+    .card{
+        background: rgb(169, 118, 228);
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 9rem;
+        text-align: center;
+    }
+    .navbar{
+        background:rgb(93, 233, 252);
+        width: calc(100%-2rem);
+        padding: 1rem;
+        margin-bottom: 10rem;
+        font-size: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(15, 2, 34);
+    }
+    h1{
+        margin: 10rem;
+    }
+    .pic{
+        width: 5rem;
+        height: 8rem;
+        border-radius: 50%;
+    }
+    .titulo{
+        margin-left: 1rem;
+    }
+</style>
+<body>
+
+    <div class=""navbar"><a href="/familiares">MI_FAMILIA</a></div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
